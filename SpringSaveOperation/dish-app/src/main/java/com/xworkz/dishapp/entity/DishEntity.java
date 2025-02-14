@@ -1,0 +1,22 @@
+package com.xworkz.dishapp.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+import javax.persistence.*;
+
+@Data
+@NoArgsConstructor@AllArgsConstructor
+@ToString
+@Entity
+@Table(name = "dish_info")
+public class DishEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer slNo;
+    private String name;
+    private String cuisine;
+    private String taste;
+}
