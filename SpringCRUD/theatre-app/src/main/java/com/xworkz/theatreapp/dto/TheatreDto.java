@@ -1,0 +1,19 @@
+package com.xworkz.theatreapp.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@Data
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
+public class TheatreDto {
+    private  Integer id;
+    private String name;
+
+    private String type;
+
+    private String amenities;
+}
